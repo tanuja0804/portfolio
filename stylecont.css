@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+.logo{
+    height: 100px;
+    width: 250px;
+    cursor: pointer;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+
+}
+.navbar ul li{
+    text-transform: uppercase;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+.navbar ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.navbar ul li a:hover::after{
+  width:100%;
+}
+section{
+    padding: 40px 15%;
+}
+.contact{
+    height: 100%;
+    width: 100%;
+    min-height: 10vh;
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    align-items: center;
+    grid-gap: 6rem;
+}
+.contact-img img{
+    max-width: 100%;
+    width: 720px;
+    height: auto;
+    border-radius: 10px;
+}
+.contact-form h1{
+  font-size: 80px;
+  color: #fff;
+   margin-bottom: 20px;
+}
+span{
+    color: #ff004f;
+}
+.contact-form p{
+    color: #ffffff;
+    letter-spacing: 1px;
+    line-height: 26px;
+    font-size: 18px;
+    margin-bottom: 3.8rem;
+    text-align: center;
+}
+.contact-form p a{
+    color: #fff;
+
+}
+.contact-form form{
+    position: relative;
+}
+.contact-form form input, form textarea{
+ width: 100%;
+ padding: 17px;
+ border: none;
+ outline: none;
+ background: #191919;
+ color: #fff;
+ font-size: 1.1rem;
+ margin-bottom: 0.7rem;
+ border-radius: 7px;
+}
+.contact-form textarea{
+    resize: none;
+    height: 200px;
+}
+.contact-form form .btn{
+    display: inline-block;
+    background: #ff004f;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    width: 220px;
+    transition: ease .20s;
+    cursor: pointer;
+
+}
+.contact-form form .btn:hover{
+    border: 2px solid #ff004f; 
+    background: transparent;
+    transform: scale(1.0);
+}
+
+.social-links ul li{
+    display: inline;
+    padding-right: 100px;
+    color: white;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    margin-bottom: 13px;
+    
+  }
+  .social-links img{
+    height: 30px;
+    width: 30px;
+  }
+  .para{
+    display: flex;
+    justify-content: center;
+ } 

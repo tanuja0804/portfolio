@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+.logo{
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+
+}
+.navbar ul li{
+    text-transform: uppercase;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+.navbar ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.navbar ul li a:hover::after{
+  width:100%;
+}
+h1{
+    font-size: 40.5px;
+        margin-top: 170px;
+        margin-right: 357px;
+        font-family: sans-serif;
+        letter-spacing: 1px;
+        text-align: right;
+        color: black;
+        position: absolute;
+        top: 0;
+        right: 0;
+        line-height: 1.5;
+        height: 00px;
+}
+.about {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 180px;
+    margin-right: 260px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    text-align: justify;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    line-height: 1.5;
+     max-width: 570px;
+    box-sizing: border-box;
+    padding: 24px;
+    border: 3px solid #ff004f;
+    transition: background 0.5s,transform 0.5s;
+}
+.about:hover{
+    background-color: #ff004f;
+    transform: translateY(-10px);
+}
+#photo{
+    height: 450px;
+    margin-left: 350px;
+   
+}
+.social-links ul li{
+    display: inline;
+    padding-right: 100px;
+    color: white;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+    
+  }
+  .social-links img{
+    height: 30px;
+    width: 30px;
+  }
+ .para{
+    display: flex;
+    justify-content: center;
+ } 
